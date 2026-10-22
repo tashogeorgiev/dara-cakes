@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Can Cakes · десерти в кенче · made by Dara</title>
+<meta name="description" content="Ръчно приготвени десерти в индивидуални кенчета от Царево. Вкусове, поводи, B2B партньорства и запитване за оферта.">
+<meta property="og:title" content="Can Cakes · десерти в кенче">
+<meta property="og:description" content="Ръчно приготвени десерти в индивидуални кенчета. За събития, офиси, хотели и празници.">
+<meta property="og:image" content="img/matcha-1.webp">
+<meta name="theme-color" content="#FAF5EC">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='7' y='3' width='18' height='4' rx='1.5' fill='%23b9bcbf'/%3E%3CclipPath id='c'%3E%3Crect x='6' y='6' width='20' height='24' rx='4'/%3E%3C/clipPath%3E%3Cg clip-path='url(%23c)'%3E%3Crect x='0' y='0' width='32' height='32' fill='%23f4ecd2'/%3E%3Crect x='0' y='8' width='32' height='5' fill='%238E1F33'/%3E%3Crect x='0' y='16' width='32' height='6' fill='%23b9c98a'/%3E%3Crect x='0' y='25' width='32' height='6' fill='%236f4b36'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Cormorant:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FAF5EC; --cream:#F3EADC; --matcha:#D7DDB8; --pink:#EFCFCB;
+  --choco:#2D1B16; --crumb:#3A2620;
+  --ink:#2A1A16; --muted:#6B5650; --berry:#8E1F33; --berry-2:#B5303F; --caramel:#C98B4B;
+  --line:rgba(42,26,22,.18);
+  --gutter:clamp(16px,4vw,56px);
+  --serif:"Cormorant",Georgia,serif; --sans:"Golos Text",system-ui,sans-serif; --hand:"Caveat",cursive;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+/* хартиена текстура */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.07;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+[hidden]{display:none!important}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:2px dashed var(--berry);outline-offset:3px}
+.wrap{max-width:1240px;margin:0 auto;padding-inline:var(--gutter)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:.95;letter-spacing:-.01em;margin:0}
+h2{font-size:clamp(44px,7vw,92px)}
+h2 em,h1 em{font-style:italic;font-weight:500;color:var(--berry)}
+.hand{font-family:var(--hand);font-weight:500}
+.eyebrow{font:600 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;gap:.6em;padding:.95em 1.5em;border-radius:999px;border:1.5px solid var(--ink);font:600 15px/1 var(--sans);text-decoration:none;cursor:pointer;background:transparent;color:var(--ink);transition:background .2s,color .2s,transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.solid{background:var(--berry);border-color:var(--berry);color:#fff}
+.btn.solid:hover{background:var(--ink);border-color:var(--ink)}
+
+/* вълни между пластовете */
+.wave{display:block;width:100%;height:clamp(36px,5vw,70px);margin:-1px 0}
+
+/* ---------- HERO ---------- */
+header.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:22px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo b{font:700 italic 30px/1 var(--serif);color:var(--berry);letter-spacing:-.02em}
+.logo span{font:500 19px/1 var(--hand);color:var(--muted);margin-top:6px}
+nav.links{display:flex;gap:28px;align-items:center;font-size:15px}
+nav.links a{text-decoration:none;position:relative}
+nav.links a:not(.btn):hover{color:var(--berry)}
+nav.links .btn{padding:.7em 1.2em}
+@media (max-width:860px){nav.links a:not(.btn){display:none}}
+
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(24px,5vw,72px);align-items:center;padding-block:clamp(24px,5vw,64px) clamp(32px,6vw,80px)}
+.hero h1{font-size:clamp(64px,11vw,168px);line-height:.86;margin:18px 0 26px}
+.hero h1 em{display:block;padding-left:.5em}
+.hero .lede{font-size:clamp(17px,1.6vw,20px);max-width:30em;color:var(--muted);margin:0 0 30px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero .facts{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:34px;font:500 23px/1.1 var(--hand);color:var(--berry)}
+.hero .facts span::before{content:"✓ ";font-family:var(--sans);font-size:15px}
+.shot{position:relative;margin:0;max-width:480px;justify-self:center;width:100%}
+.shot img{width:100%;aspect-ratio:833/1100;object-fit:cover;border-radius:50% 50% 14px 14px/34% 34% 14px 14px;box-shadow:0 30px 60px -30px rgba(45,27,22,.45)}
+.note{position:absolute;display:flex;align-items:center;gap:4px;width:30%;font:600 clamp(16px,1.7vw,22px)/1 var(--hand);color:var(--ink);transform:translateY(-50%)}
+.note svg{flex:0 0 auto;width:clamp(26px,3vw,40px);height:auto;stroke:var(--berry);fill:none;stroke-width:2;stroke-linecap:round}
+.note.l{left:2%;justify-content:flex-end;text-align:right}
+.note.r{right:1%;flex-direction:row-reverse;justify-content:flex-end;text-align:left}
+.note.r svg{transform:scaleX(-1)}
+@media (max-width:860px){.hero{grid-template-columns:1fr}.shot{max-width:440px}}
+
+/* ---------- ИСТОРИЯ ---------- */
+.story{background:var(--matcha)}
+.story .wrap{display:grid;grid-template-columns:auto 1fr;gap:clamp(24px,6vw,96px);align-items:start;padding-block:clamp(40px,6vw,90px)}
+.big6{position:relative;width:max-content;font:italic 500 clamp(180px,26vw,360px)/.75 var(--serif);color:var(--choco)}
+.big6 small{position:absolute;right:-.2em;bottom:-.1em;font:700 clamp(28px,3.4vw,44px)/1 var(--hand);color:var(--berry);transform:rotate(-8deg)}
+.story h2{margin:6px 0 24px;line-height:1.12}
+.story p{max-width:36em;margin:0 0 16px}
+.trio{list-style:none;padding:0;margin:28px 0 0;font:600 clamp(24px,2.6vw,32px)/1.2 var(--serif);font-style:italic}
+.trio li{border-top:1px solid var(--line);padding:10px 0}
+.sticker{position:absolute;right:var(--gutter);top:-40px;width:clamp(120px,13vw,170px);aspect-ratio:1;z-index:2;transform:rotate(-10deg)}
+.sticker svg{width:100%;height:100%;overflow:visible}
+.sticker .spin{transform-origin:100px 100px;animation:spin 28s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.sticker .spin{animation:none}html{scroll-behavior:auto}}
+@media (max-width:760px){.story .wrap{grid-template-columns:1fr}.big6{font-size:170px}.sticker{top:-56px}}
+
+/* ---------- ВКУСОВЕ ---------- */
+.menu-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px 32px;padding-block:clamp(40px,6vw,80px) 28px}
+.menu-head p{max-width:26em;margin:0;color:var(--muted)}
+.menu{display:grid;grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);column-gap:clamp(24px,4vw,64px);padding-bottom:clamp(48px,7vw,100px)}
+.flav{display:contents}
+.flav-btn{grid-column:1;display:grid;grid-template-columns:2.4em 1fr;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;border-top:1px solid var(--line);padding:16px 4px;cursor:pointer;color:inherit;font:inherit}
+.flav:last-child .flav-btn{border-bottom:1px solid var(--line)}
+.flav-btn .no{font:600 14px/1 var(--sans);color:var(--muted);font-variant-numeric:tabular-nums}
+.flav-btn .nm{font:600 clamp(26px,2.6vw,34px)/1 var(--serif)}
+.flav-btn .nm small{display:block;font:italic 500 17px/1.3 var(--serif);color:var(--muted);margin-top:4px}
+.flav-btn:hover .nm{color:var(--berry)}
+.flav-btn[aria-expanded=true] .nm{color:var(--berry);font-style:italic}
+.flav-btn[aria-expanded=true] .no{color:var(--berry)}
+.flav-detail{grid-column:2;grid-row:1/span 8;align-self:start;position:sticky;top:24px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(18px,3vw,36px)}
+.flav-detail[hidden]{display:none}
+.flav-detail.solo{grid-template-columns:minmax(0,1fr);max-width:34em}
+.flav-detail .media img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px;background:#d9d8d4}
+.thumbs{display:flex;gap:8px;margin-top:10px}
+.thumbs button{padding:0;border:2px solid transparent;border-radius:8px;overflow:hidden;cursor:pointer;width:52px;height:52px;background:none}
+.thumbs button[aria-pressed=true]{border-color:var(--berry)}
+.thumbs img{width:100%;height:100%;object-fit:cover}
+.txt h3{font-size:clamp(34px,3.4vw,48px)}
+.txt .tag{font:italic 500 22px/1.25 var(--serif);color:var(--berry);margin:8px 0 14px}
+.txt p{margin:0 0 16px}
+.txt h4{font:600 11px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:22px 0 10px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:0}
+.chips li{display:flex;align-items:center;gap:7px;font-size:14px;padding:5px 11px 5px 7px;border:1px solid var(--line);border-radius:999px;background:var(--paper)}
+.chips i{width:12px;height:12px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.15)}
+.want{display:inline-block;margin-top:22px;font:700 24px/1 var(--hand);color:var(--berry);text-decoration:none;border-bottom:2px solid currentColor}
+.want:hover{color:var(--ink)}
+@media (max-width:900px){
+  .menu{grid-template-columns:1fr}
+  .flav-detail{grid-column:1;grid-row:auto;position:static;padding:4px 0 28px;grid-template-columns:1fr}
+  .flav-detail .media img{aspect-ratio:4/5;max-height:70vh}
+}
+
+/* ---------- ПОВОДИ / B2B ---------- */
+.biz{background:var(--choco);color:#F3EADC}
+.biz .wrap{padding-block:clamp(48px,7vw,100px)}
+.biz h2 em{color:#E9A2AE}
+.biz .eyebrow{color:#CDB9A8}
+.biz-top{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(24px,5vw,80px);align-items:center}
+.biz-top p{max-width:34em;color:#DCCBBE}
+.taped{position:relative;margin:0;transform:rotate(2.5deg);background:#fff;padding:10px 10px 40px;box-shadow:0 20px 40px -18px #000}
+.taped::before{content:"";position:absolute;top:-14px;left:50%;width:110px;height:30px;transform:translateX(-50%) rotate(-4deg);background:rgba(240,226,196,.75)}
+.taped figcaption{position:absolute;bottom:8px;left:14px;font:600 22px/1 var(--hand);color:var(--ink)}
+.uses{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 clamp(24px,5vw,72px);margin-top:clamp(40px,6vw,80px)}
+.use{border-top:1px solid rgba(243,234,220,.22);padding:22px 0 30px}
+.use h3{font-size:clamp(28px,2.8vw,38px);font-weight:500;margin-bottom:10px}
+.use p{margin:0;color:#DCCBBE;max-width:30em}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:clamp(32px,5vw,64px) 0 36px;padding:28px 0 0;border-top:1px dashed rgba(243,234,220,.35);list-style:none}
+.steps b{display:block;font:700 46px/1 var(--hand);color:#E9A2AE}
+.steps strong{display:block;font:600 24px/1.2 var(--serif);margin:4px 0 6px}
+.steps span{color:#CDB9A8;font-size:15px}
+.biz .btn{border-color:#F3EADC;color:#F3EADC}
+.biz .btn.solid{background:#F3EADC;color:var(--choco)}
+.biz .btn.solid:hover{background:#E9A2AE;border-color:#E9A2AE}
+@media (max-width:860px){.biz-top,.uses{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.taped{max-width:420px}}
+
+/* ---------- ГАЛЕРИЯ ---------- */
+.gallery{background:var(--pink)}
+.gallery .wrap{padding-block:clamp(40px,6vw,80px) 10px;display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:8px}
+.gallery .hand{font-size:26px;color:var(--berry)}
+.strip{display:flex;gap:clamp(14px,2vw,28px);overflow-x:auto;scroll-snap-type:x mandatory;padding:30px var(--gutter) clamp(48px,6vw,80px);scrollbar-width:thin;scrollbar-color:var(--berry) transparent}
+.strip figure{flex:0 0 auto;margin:0;scroll-snap-align:center;background:#fff;padding:8px 8px 38px;position:relative;box-shadow:0 14px 30px -18px rgba(45,27,22,.5)}
+.strip figure:nth-child(odd){transform:rotate(-1.2deg)}
+.strip figure:nth-child(3n){transform:rotate(1.4deg) translateY(14px)}
+.strip img{height:clamp(260px,40vw,420px);width:auto}
+.strip figcaption{position:absolute;left:12px;bottom:8px;font:600 21px/1 var(--hand)}
+
+/* ---------- ЗАПИТВАНЕ ---------- */
+.ask{background:var(--cream)}
+.ask .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(28px,5vw,80px);padding-block:clamp(48px,7vw,100px)}
+.ask h2{margin:8px 0 22px}
+.ask .intro p{color:var(--muted);max-width:28em}
+.contacts{list-style:none;padding:0;margin:32px 0 0;font-size:16px}
+.contacts li{display:grid;grid-template-columns:7.5em 1fr;padding:12px 0;border-top:1px solid var(--line)}
+.contacts li span{color:var(--muted)}
+.contacts a{text-decoration:none;border-bottom:1px solid var(--line)}
+.contacts a:hover{color:var(--berry);border-color:var(--berry)}
+.slip{position:relative;background:var(--paper);padding:clamp(22px,3.5vw,44px);box-shadow:0 30px 50px -34px rgba(45,27,22,.55);
+  -webkit-mask:radial-gradient(circle 7px at 50% 0,#0000 98%,#000) 0 0/22px 100% repeat-x;mask:radial-gradient(circle 7px at 50% 0,#0000 98%,#000) 0 0/22px 100% repeat-x}
+.slip-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-bottom:16px;margin-bottom:8px;border-bottom:2px dashed var(--line)}
+.slip-head b{font:700 italic 28px/1 var(--serif);color:var(--berry)}
+.slip-head span{font:500 13px/1.4 var(--sans);color:var(--muted);letter-spacing:.06em;text-align:right}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}
+.field{display:block;padding-top:18px}
+.field>span,fieldset legend{display:block;font:600 11px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.field input,.field textarea,.field select{width:100%;border:0;border-bottom:1.5px solid var(--line);background:transparent;padding:8px 0;font:500 18px/1.4 var(--sans);color:var(--ink);border-radius:0}
+.field textarea{resize:vertical;min-height:84px;background-image:repeating-linear-gradient(transparent 0 31px,var(--line) 31px 32px);line-height:32px;border-bottom:0;padding:0}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--berry)}
+fieldset{border:0;padding:0;margin:22px 0 0}
+.pick{display:flex;flex-wrap:wrap;gap:7px}
+.pick label{cursor:pointer}
+.pick input{position:absolute;opacity:0;pointer-events:none}
+.pick span{display:inline-block;padding:7px 13px;border:1.5px solid var(--line);border-radius:999px;font-size:14px;transition:all .15s;user-select:none}
+.pick label:hover span{border-color:var(--ink)}
+.pick input:checked+span{background:var(--berry);border-color:var(--berry);color:#fff}
+.pick input:focus-visible+span{outline:2px dashed var(--berry);outline-offset:2px}
+.hp{position:absolute;left:-9999px}
+.send{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:30px}
+.status{font:600 22px/1.15 var(--hand);color:var(--berry);margin:0}
+@media (max-width:900px){.ask .wrap{grid-template-columns:1fr}}
+@media (max-width:520px){.row{grid-template-columns:1fr}}
+
+/* ---------- ДЪНО ---------- */
+footer{background:var(--crumb);color:#E9DCCF;
+  background-image:radial-gradient(#5a3d31 1.2px,transparent 1.6px),radial-gradient(#4a3027 1.6px,transparent 2px);
+  background-size:23px 19px,37px 31px;background-position:0 0,11px 7px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:20px;padding-block:44px 36px}
+footer .logo b{color:#F0B6C0}
+footer .logo span{color:#CDB9A8}
+footer .bye{font:500 24px/1.2 var(--hand);color:#CDB9A8;margin:0}
+footer small{display:block;width:100%;color:#9c8577;font-size:13px}
+
+/* ---------- кенче-навигация ---------- */
+.can-nav{position:fixed;right:18px;top:50%;transform:translateY(-50%);z-index:40;display:flex;flex-direction:column;width:22px;border-radius:5px 5px 8px 8px;overflow:visible;border-top:4px solid #b9bcbf;box-shadow:0 6px 16px -6px rgba(0,0,0,.35)}
+.can-nav a{position:relative;display:block;height:30px;transition:width .2s}
+.can-nav a:first-child{border-radius:0}
+.can-nav a:last-child{border-radius:0 0 7px 7px}
+.can-nav a::after{content:attr(data-l);position:absolute;right:30px;top:50%;transform:translateY(-50%);white-space:nowrap;font:600 20px/1 var(--hand);color:var(--ink);background:var(--paper);padding:3px 8px;border-radius:6px;opacity:0;pointer-events:none;transition:opacity .2s}
+.can-nav a:hover::after,.can-nav a.on::after{opacity:1}
+.can-nav a.on{box-shadow:inset 0 0 0 2px var(--berry)}
+@media (max-width:1180px){.can-nav{display:none}}
+</style>
+</head>
+<body>
+
+<!-- ============ ПЛАСТ 1: КРЕМ ============ -->
+<section id="top">
+  <div class="wrap">
+    <header class="top">
+      <a class="logo" href="#top"><b>Can Cakes</b><span>made by Dara</span></a>
+      <nav class="links">
+        <a href="#vkusove">Вкусове</a>
+        <a href="#istoriya">История</a>
+        <a href="#povodi">За бизнеса</a>
+        <a class="btn" href="#zapitvane">Запитване</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div>
+        <p class="eyebrow">Царево · семейна сладкарница · 6 години</p>
+        <h1>Десерт <em>в кенче.</em></h1>
+        <p class="lede">Ръчно наредени пластове крем, блат и плод — затворени в индивидуално кенче. Лесно за сервиране, красиво на масата и удобно за всяко събитие.</p>
+        <div class="ctas">
+          <a class="btn solid" href="#vkusove">Виж вкусовете</a>
+          <a class="btn" href="#zapitvane">Поискай оферта</a>
+        </div>
+        <p class="facts"><span>без ГМО</span><span>без изкуствени оцветители</span><span>ръчна работа</span></p>
+      </div>
+
+      <figure class="shot">
+        <img src="img/matcha-1.webp" alt="Чийзкейк с матча и ягоди в стъклено кенче Can Cakes" width="833" height="1100" fetchpriority="high">
+        <span class="note l" style="top:31%">ягоди<svg viewBox="0 0 40 20"><path d="M2 6c10-5 22-4 34 6M30 7l6 5-7 3"/></svg></span>
+        <span class="note r" style="top:41%">матча Ceremonial<svg viewBox="0 0 40 20"><path d="M2 6c10-5 22-4 34 6M30 7l6 5-7 3"/></svg></span>
+        <span class="note l" style="top:62%">кадифен крем<svg viewBox="0 0 40 20"><path d="M2 14c12 4 22 0 34-8M29 5l7 1-3 7"/></svg></span>
+        <span class="note r" style="top:70%">хрупкаво дъно<svg viewBox="0 0 40 20"><path d="M2 14c12 4 22 0 34-8M29 5l7 1-3 7"/></svg></span>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" style="background:var(--paper)" aria-hidden="true"><path fill="#D7DDB8" d="M0 34C110 14 210 52 370 36S610 6 780 26 1060 58 1210 30 1390 20 1440 38V70H0Z"/></svg>
+
+<!-- ============ ПЛАСТ 2: МАТЧА ============ -->
+<section id="istoriya" class="story" style="position:relative">
+  <div class="sticker" aria-hidden="true"><svg viewBox="0 0 200 200"><path id="scallop" fill="#FAF5EC" stroke="#8E1F33" stroke-width="1.5"/><g class="spin"><defs><path id="ring" d="M100 100m-66 0a66 66 0 1 1 132 0a66 66 0 1 1-132 0"/></defs><text font-family="Golos Text,sans-serif" font-size="12.5" font-weight="600" letter-spacing="2.6" fill="#8E1F33"><textPath href="#ring">БЕЗ ГМО · БЕЗ ОЦВЕТИТЕЛИ · БЕЗ ПОДОБРИТЕЛИ ·</textPath></text></g><text x="100" y="98" text-anchor="middle" font-family="Caveat,cursive" font-size="30" font-weight="700" fill="#2A1A16">с подбрани</text><text x="100" y="124" text-anchor="middle" font-family="Caveat,cursive" font-size="30" font-weight="700" fill="#2A1A16">съставки</text></svg></div>
+  <div class="wrap">
+    <div class="big6">6<small>години</small></div>
+    <div>
+      <p class="eyebrow">Нашата история</p>
+      <h2>Баланс между <em>здравословното</em> и вкусното.</h2>
+      <p>Вече шест години като семейна компания следваме една проста идея — да намерим баланса между здравословното и вкусното в света на десертите.</p>
+      <p>Всичко започна в Царево, където създаваме интересни алтернативи на традиционните сладкарски изделия — с подбрани съставки и внимание към всеки детайл. Без ГМО, изкуствени оцветители и изкуствени подобрители.</p>
+      <p>Днес пренасяме тази философия в индивидуални кенчета с ръчно приготвени десерти — модерно и практично решение за събития, офиси, хотели, кетъринг и семейни празници.</p>
+      <ul class="trio"><li>Шест години опит.</li><li>Подбрани съставки.</li><li>Десерти, създадени с отношение.</li></ul>
+    </div>
+  </div>
+</section>
+
+<svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" style="background:var(--matcha)" aria-hidden="true"><path fill="#FAF5EC" d="M0 40C160 58 260 18 420 30S700 60 880 42 1150 10 1300 28 1420 44 1440 36V70H0Z"/></svg>
+
+<!-- ============ ПЛАСТ 3: МЕНЮ ============ -->
+<section id="vkusove">
+  <div class="wrap">
+    <div class="menu-head">
+      <div><p class="eyebrow">Менюто</p><h2>Осем <em>вкуса,</em><br>едно кенче.</h2></div>
+      <p>Избери вкус, за да видиш какво има вътре. Можеш да комбинираш няколко вкуса в една поръчка.</p>
+    </div>
+    <div class="menu" id="menu"></div>
+  </div>
+</section>
+
+<svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" style="background:var(--paper)" aria-hidden="true"><path fill="#2D1B16" d="M0 30C140 50 300 12 470 28S760 56 930 34 1240 8 1440 32V70H0Z"/></svg>
+
+<!-- ============ ПЛАСТ 4: ШОКОЛАДОВ БЛАТ ============ -->
+<section id="povodi" class="biz">
+  <div class="wrap">
+    <div class="biz-top">
+      <div>
+        <p class="eyebrow">Поводи и партньорства</p>
+        <h2 style="margin:8px 0 22px">Премиум десерти <em>за бизнеса.</em></h2>
+        <p>От елегантни корпоративни вечери и специални събития до нестандартни тиймбилдинги и семейни празници — нашите десерти добавят завършващ акцент към всеки повод.</p>
+        <p>Предлагаме гъвкави възможности за поръчка и доставка — от еднократни събития до регулярни доставки и дългосрочни партньорства.</p>
+      </div>
+      <figure class="taped"><img src="img/peanuts-trio.webp" alt="Три кенчета с карамел, фъстъци и шоколад" width="1100" height="825" loading="lazy"><figcaption>карамел с фъстъци ×3</figcaption></figure>
+    </div>
+
+    <div class="uses">
+      <article class="use"><h3>Корпоративни събития и кетъринг</h3><p>Бизнес срещи, конференции, коктейли и официални вечери — индивидуално представени десерти с изискан вид и разнообразие от вкусове.</p></article>
+      <article class="use"><h3>Офиси и бизнес пространства</h3><p>Качествен десерт към кафето, по време на среща или като корпоративен жест. Регулярното зареждане улеснява планирането.</p></article>
+      <article class="use"><h3>Хотели, летища и вендинг</h3><p>Там, където удобството, визията и бързото обслужване са от значение. Отворени сме за партньорства с търговски обекти и оператори.</p></article>
+      <article class="use"><h3>Тиймбилдинги и частни събития</h3><p>От неформални фирмени събирания до рождени дни и семейни празници — десертите се вписват в различни концепции и улесняват сервирането.</p></article>
+    </div>
+
+    <ol class="steps">
+      <li><b>1.</b><strong>Пишеш ни</strong><span>Попълваш запитването — повод, количество, предпочитани вкусове.</span></li>
+      <li><b>2.</b><strong>Чуваме се</strong><span>Обсъждаме асортимента, количествата и графика за доставка.</span></li>
+      <li><b>3.</b><strong>Приготвяме</strong><span>Ръчно, в индивидуални кенчета, точно за твоя повод.</span></li>
+    </ol>
+    <a class="btn solid" href="#zapitvane">Поискай индивидуална оферта</a>
+  </div>
+</section>
+
+<svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" style="background:var(--choco)" aria-hidden="true"><path fill="#EFCFCB" d="M0 38C120 20 260 50 420 40S690 12 860 30 1130 56 1290 36 1410 26 1440 30V70H0Z"/></svg>
+
+<!-- ============ ПЛАСТ 5: ЯГОДА ============ -->
+<section id="galeriya" class="gallery">
+  <div class="wrap"><h2>От <em>витрината</em></h2><span class="hand">плъзни настрани →</span></div>
+  <div class="strip" id="strip"></div>
+</section>
+
+<svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" style="background:var(--pink)" aria-hidden="true"><path fill="#F3EADC" d="M0 28C180 48 320 16 500 30S800 54 980 36 1260 14 1440 34V70H0Z"/></svg>
+
+<!-- ============ ПЛАСТ 6: КРЕМ ============ -->
+<section id="zapitvane" class="ask">
+  <div class="wrap">
+    <div class="intro">
+      <p class="eyebrow">Запитване</p>
+      <h2>Нека създадем нещо <em>добро</em> заедно.</h2>
+      <p>Независимо дали организирате събитие, управлявате хотел или офис, или търсите ново десертно предложение за своите клиенти — пишете ни. Ще обсъдим подходящия асортимент, количествата и графика за доставка.</p>
+      <ul class="contacts">
+        <li><span>Телефон</span><a href="tel:+359878838353">0878 838 353</a></li>
+        <li><span>Имейл</span><a href="mailto:daratsarevo@abv.bg">daratsarevo@abv.bg</a></li>
+        <li><span>Instagram</span><a href="https://www.instagram.com/dara_cakes/" target="_blank" rel="noopener">@dara_cakes</a></li>
+        <li><span>Сайт</span><a href="https://www.daratsarevo.bg" target="_blank" rel="noopener">www.daratsarevo.bg</a></li>
+        <li><span>Адрес</span><a href="https://www.google.com/maps/search/?api=1&amp;query=%D1%83%D0%BB.+%D0%95%D0%BA%D0%B7%D0%B0%D1%80%D1%85+%D0%99%D0%BE%D1%81%D0%B8%D1%84+1,+8260+%D0%A6%D0%B0%D1%80%D0%B5%D0%B2%D0%BE" target="_blank" rel="noopener">ул. „Екзарх Йосиф“ 1, 8260 Царево</a></li>
+      </ul>
+    </div>
+
+    <form class="slip" id="form" action="https://formsubmit.co/daratsarevo@abv.bg" method="POST">
+      <div class="slip-head"><b>Запитване</b><span id="slipDate"></span></div>
+      <input type="hidden" name="_subject" value="Ново запитване от сайта на Can Cakes">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <div class="row">
+        <label class="field"><span>Име *</span><input name="Име" required autocomplete="name"></label>
+        <label class="field"><span>Компания</span><input name="Компания" autocomplete="organization" placeholder="по желание"></label>
+      </div>
+      <div class="row">
+        <label class="field"><span>Телефон *</span><input name="Телефон" type="tel" required autocomplete="tel"></label>
+        <label class="field"><span>Имейл *</span><input name="email" type="email" required autocomplete="email"></label>
+      </div>
+
+      <fieldset><legend>Повод</legend><div class="pick" id="occasions"></div>
+        <label class="field" id="otherWrap" hidden><span>Какъв е поводът? *</span><input name="Друг повод" disabled></label></fieldset>
+
+      <div class="row">
+        <label class="field"><span>Брой кенчета</span><input name="Брой кенчета" type="number" min="1" inputmode="numeric" placeholder="напр. 40"></label>
+        <label class="field"><span>Дата на събитието</span><input name="Дата" type="date"></label>
+      </div>
+
+      <fieldset><legend>Доставка</legend><div class="pick">
+        <label><input type="radio" name="Доставка" value="Еднократно" checked><span>Еднократно</span></label>
+        <label><input type="radio" name="Доставка" value="Регулярно"><span>Регулярно</span></label>
+        <label><input type="radio" name="Доставка" value="Дългосрочно партньорство"><span>Дългосрочно партньорство</span></label>
+      </div></fieldset>
+
+      <fieldset><legend>Предпочитани вкусове</legend><div class="pick" id="flavPick"></div></fieldset>
+
+      <label class="field"><span>Още нещо?</span><textarea name="Бележки" rows="3" placeholder="алергии, брандиране, адрес за доставка…"></textarea></label>
+
+      <div class="send">
+        <button class="btn solid" type="submit">Изпрати запитването</button>
+        <p class="status" id="status" role="status"></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" style="background:var(--cream)" aria-hidden="true"><path fill="#3A2620" d="M0 36C150 18 300 50 460 34S760 10 930 30 1220 54 1440 30V70H0Z"/></svg>
+
+<!-- ============ ДЪНОТО ============ -->
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="logo" href="#top"><b>Can Cakes</b><span>made by Dara</span></a>
+      <p class="bye">Стигна до дъното на кенчето. Време е за следващото.</p>
+    </div>
+    <a class="btn" style="border-color:#E9DCCF;color:#E9DCCF" href="#top">Обратно горе ↑</a>
+    <small>© <span id="yr"></span> Can Cakes · Царево · Ръчно приготвени десерти в индивидуални кенчета</small>
+  </div>
+</footer>
+
+<nav class="can-nav" aria-label="Пластове на страницата">
+  <a href="#top" data-l="начало" style="background:#FAF5EC"></a>
+  <a href="#istoriya" data-l="история" style="background:#D7DDB8"></a>
+  <a href="#vkusove" data-l="вкусове" style="background:#F3E6CF"></a>
+  <a href="#povodi" data-l="за бизнеса" style="background:#2D1B16"></a>
+  <a href="#galeriya" data-l="снимки" style="background:#EFCFCB"></a>
+  <a href="#zapitvane" data-l="запитване" style="background:#F3EADC"></a>
+</nav>
+
+<script>
+// Пластовете са отдолу нагоре: [име, цвят, дебелина]
+const L = {
+  chocoSponge:['шоколадов блат','#4a2c22',2], coffeeSponge:['блат с еспресо','#6f4b36',2],
+  coconut:['кокосов блат','#e6d3a8',1.6], crumbs:['хрупкава основа','#d2b27a',1],
+  mascarpone:['маскарпоне крем','#efe1c4',2.6], cheesecake:['чийзкейк крем','#f6edd6',2.6],
+  matcha:['матча Ceremonial Grade','#b9c98a',2.4], strawberry:['ягоди','#b5303f',1],
+  milkChoco:['маскарпоне с млечен шоколад','#d9b48c',2.6], fruit:['плод по избор','#a3243a',1],
+  yogurt:['крем със заквасена сметана, боровинки и чия','#a98bc4',2.6],
+  lime:['крем със заквасена сметана и лайм','#e4ebc2',2.4], raspberry:['малини','#c73a5c',1],
+  pumpkin:['мус от печена тиква с мед и канела','#e48b3e',2.2], caramelCream:['маскарпоне крем с карамел','#d8a868',2.4],
+  peanuts:['карамел с фъстъци','#a8692e',1.2], darkChoco:['хрупкав черен шоколад','#2a1712',.7], cocoa:['какао','#4b2e22',.5],
+};
+const F = [
+  {name:'Тирамису', tag:'Класика с характер.',
+   d:'Нежен маскарпоне крем, аромат на еспресо от 100% арабика и деликатен щрих тъмен ром. Познатият италиански десерт разгръща балансирана комбинация от кафе, кремообразна мекота и наситен аромат.',
+   layers:[L.coffeeSponge,L.mascarpone,L.coffeeSponge,L.mascarpone,L.cocoa], extra:['еспресо 100% арабика','тъмен ром'], photos:[]},
+  {name:'Класически чийзкейк', tag:'Нежност, която оставя място за въображението.',
+   d:'Кадифен чийзкейк крем, съчетан с плод по избор. Кремообразната текстура среща свежите плодови нотки и създава хармония между сладост и лека плодова киселинност.',
+   layers:[L.crumbs,L.cheesecake,L.fruit,L.cheesecake,L.fruit], fruits:['ягода','вишна','боровинка'], photos:[]},
+  {name:'Чийзкейк матча и ягоди', tag:'Неочаквана среща между свежест и нежност.',
+   d:'Кремообразен чийзкейк в два нюанса — чист крем и слоеве с матча от клас Ceremonial Grade. Ягодите добавят сочна плодова сладост, която се преплита с характерния тревист вкус на зеления чай.',
+   layers:[L.crumbs,L.cheesecake,L.matcha,L.strawberry,L.matcha,L.cheesecake,L.strawberry], photos:['matcha-1','matcha-2','matcha-3']},
+  {name:'Маскарпоне, шоколад и плод', tag:'Твоят десерт. Твоето съчетание.',
+   d:'Нежен маскарпоне крем с италиански бял или млечен шоколад, съчетан с шоколадови или ванилови блатове. Добави любимия си плод — и получи комбинация, в която кремът, шоколадът и плодът се допълват във всяка лъжица.',
+   layers:[L.chocoSponge,L.milkChoco,L.chocoSponge,L.milkChoco,L.fruit], fruits:['ягода','вишна','боровинка','праскова'], photos:['masc-cherry','masc-blueberry','masc-peach','masc-peach-2']},
+  {name:'Йогурт с боровинки и чия', tag:'Лекота с плодово настроение.',
+   d:'Нежен крем със заквасена сметана, семена чия и сочни боровинки, подреден на пластове с кокосови блатове. Плодовите нотки и деликатният кокосов аромат се срещат в десерт с интересна текстура.',
+   layers:[L.coconut,L.yogurt,L.coconut,L.yogurt], photos:['yogurt-1','yogurt-2']},
+  {name:'Мохито с малини', tag:'Свежестта на лятото, събрана в една лъжица.',
+   d:'Нежен крем със заквасена сметана и лайм, кокосови блатове и малини. Цитрусовата свежест среща деликатния кокосов аромат и плодовия характер на малините — с усещане за лято и свеж финал.',
+   layers:[L.coconut,L.lime,L.raspberry,L.coconut,L.lime,L.raspberry], photos:[]},
+  {name:'Печена тиква и карамел', tag:'Уютът на есента среща шоколадовото изкушение.',
+   d:'Мус от печена тиква с мед и канела, нежен маскарпоне крем с карамел и шоколадови блатове. Отгоре хрупкав черен шоколад добавя контраст към нежната текстура на крема.',
+   layers:[L.chocoSponge,L.caramelCream,L.pumpkin,L.chocoSponge,L.pumpkin,L.darkChoco], photos:[]},
+  {name:'Карамел с фъстъци', tag:'Плътно шоколадово удоволствие с карамелен характер.',
+   d:'Нежен маскарпоне крем с карамел, шоколадови блатове и пластове карамел с фъстъци. Хрупкавият черен шоколад създава контраст между мек крем, сладък карамел и текстурата на фъстъците.',
+   layers:[L.chocoSponge,L.caramelCream,L.peanuts,L.chocoSponge,L.caramelCream,L.darkChoco], photos:['peanuts','peanuts-2','peanuts-trio-2']},
+];
+
+const uniq = ls => [...new Map(ls.map(l=>[l[0],l])).values()];
+
+const menu = document.getElementById('menu'), first = F.findIndex(f=>f.photos.length);
+menu.innerHTML = F.map((f,i)=>`
+<div class="flav">
+  <button class="flav-btn" aria-expanded="${i===first}" aria-controls="fd${i}"><span class="no">0${i+1}</span><span class="nm">${f.name}<small>${f.tag}</small></span></button>
+  <div class="flav-detail${f.photos.length?'':' solo'}" id="fd${i}" ${i===first?'':'hidden'}>
+    ${f.photos.length ? `<div class="media"><img src="img/${f.photos[0]}.webp" alt="${f.name}" loading="lazy">` + (f.photos.length>1 ? `<div class="thumbs">${f.photos.map((p,j)=>`<button type="button" aria-pressed="${!j}" data-src="img/${p}.webp" aria-label="Снимка ${j+1}"><img src="img/${p}.webp" alt="" loading="lazy"></button>`).join('')}</div>` : '') + '</div>' : ''}
+    <div class="txt">
+      <h3>${f.name}</h3><p class="tag">${f.tag}</p><p>${f.d}</p>
+      <h4>В кенчето</h4><ul class="chips">${uniq(f.layers).map(l=>`<li><i style="background:${l[1]}"></i>${l[0]}</li>`).join('')}${(f.extra||[]).map(e=>`<li><i style="background:#8b5a3c"></i>${e}</li>`).join('')}</ul>
+      ${f.fruits?`<h4>Плод по избор</h4><ul class="chips">${f.fruits.map(x=>`<li>${x}</li>`).join('')}</ul>`:''}
+      <a class="want" href="#zapitvane" data-flav="${f.name}">Искам този вкус →</a>
+    </div>
+  </div>
+</div>`).join('');
+
+menu.addEventListener('click', e=>{
+  const btn = e.target.closest('.flav-btn');
+  if (btn){
+    menu.querySelectorAll('.flav-btn').forEach(b=>{
+      const on = b===btn; b.setAttribute('aria-expanded',on);
+      document.getElementById(b.getAttribute('aria-controls')).hidden = !on;
+    });
+    if (matchMedia('(max-width:900px)').matches) btn.scrollIntoView({block:'start',behavior:'smooth'});
+  }
+  const th = e.target.closest('.thumbs button');
+  if (th){
+    th.closest('.media').querySelector(':scope > img').src = th.dataset.src;
+    th.parentNode.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',b===th));
+  }
+  const want = e.target.closest('.want');
+  if (want){ const cb=[...document.querySelectorAll('#flavPick input')].find(c=>c.value===want.dataset.flav); if(cb) cb.checked=true; }
+});
+
+// Галерия
+const G = [['matcha-2','матча & ягоди'],['masc-cherry','вишна & млечен шоколад'],['peanuts-trio-2','фъстъци & карамел'],['yogurt-2','боровинки & чия'],
+  ['masc-peach','праскова'],['raspberry-caramel','малина & карамел'],['matcha-3','матча'],['masc-blueberry','боровинка'],['peanuts','карамел & шоколад'],['yogurt-1','йогурт & боровинки'],['masc-peach-2','праскова & шоколад'],['peanuts-2','фъстъци']];
+document.getElementById('strip').innerHTML = G.map(([s,c])=>`<figure><img src="img/${s}.webp" alt="${c}" loading="lazy"><figcaption>${c}</figcaption></figure>`).join('');
+
+// Формата
+const pick = (name, type, vals) => vals.map(v=>`<label><input type="${type}" name="${name}" value="${v}"><span>${v}</span></label>`).join('');
+document.getElementById('occasions').innerHTML = pick('Повод','radio',['Корпоративно събитие','Офис','Хотел / кетъринг / вендинг','Тиймбилдинг','Рожден ден / празник','Друго']);
+const otherWrap = document.getElementById('otherWrap'), otherIn = otherWrap.querySelector('input');
+document.getElementById('occasions').addEventListener('change', e=>{
+  const on = e.target.value==='Друго';
+  otherWrap.hidden = otherIn.disabled = !on; otherIn.required = on;
+  if (on) otherIn.focus();
+});
+document.getElementById('flavPick').innerHTML = pick('Вкусове','checkbox',[...F.map(f=>f.name),'Изненадайте ме']);
+document.getElementById('slipDate').innerHTML = 'ДАТА '+new Date().toLocaleDateString('bg-BG')+'<br>CAN CAKES · ЦАРЕВО';
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+const form = document.getElementById('form'), status = document.getElementById('status');
+form.addEventListener('submit', async e=>{
+  e.preventDefault();
+  const data = {};
+  for (const [k,v] of new FormData(form)) data[k] = data[k] ? data[k]+', '+v : v;
+  const btn = form.querySelector('[type=submit]'); btn.disabled = true; status.textContent = 'Изпращаме…';
+  try{
+    const r = await fetch(form.action.replace('formsubmit.co/','formsubmit.co/ajax/'), {method:'POST', headers:{'Content-Type':'application/json',Accept:'application/json'}, body:JSON.stringify(data)});
+    if (!r.ok) throw 0;
+    form.reset(); otherWrap.hidden = otherIn.disabled = true; otherIn.required = false; status.textContent = 'Получихме го! Ще ти се обадим скоро ♥';
+  } catch {
+    status.textContent = 'Нещо се обърка. Опитай пак или ни пиши директно на имейла вляво.';
+  } finally { btn.disabled = false; }
+});
+
+// Назъбен стикер (като етикета на кенчето)
+document.getElementById('scallop').setAttribute('d', (()=>{
+  let d=''; const n=18;
+  for(let i=0;i<=n*8;i++){ const a=i/(n*8)*Math.PI*2, r=88+Math.cos(a*n)*5; d+=(i?'L':'M')+(100+r*Math.cos(a)).toFixed(1)+' '+(100+r*Math.sin(a)).toFixed(1); }
+  return d+'Z';
+})());
+
+// Кенче-навигацията следи в кой пласт си
+const navLinks = [...document.querySelectorAll('.can-nav a')];
+const io = new IntersectionObserver(es=>es.forEach(en=>{ if(en.isIntersecting) navLinks.forEach(a=>a.classList.toggle('on', a.hash==='#'+en.target.id)); }),
+  {rootMargin:'-45% 0px -50% 0px'});
+navLinks.forEach(a=>io.observe(document.querySelector(a.hash)));
+</script>
+</body>
+</html>
