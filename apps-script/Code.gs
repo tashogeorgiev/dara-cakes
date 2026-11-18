@@ -1,13 +1,13 @@
 /**
  * Can Cakes – приемане на запитвания от формата на сайта.
  * Сайтът праща данните тук, а скриптът ги изпраща като имейл
- * от Gmail акаунта, в който е публикуван (todor.petrovich@gmail.com).
+ * от Gmail акаунта, в който е публикуван (cancake.dara@gmail.com).
  *
  * Публикуване: Deploy → New deployment → Web app
  *   Execute as: Me    Who has access: Anyone
  */
 
-const TO = 'todor.petrovich@gmail.com';
+const TO = 'cancake.dara@gmail.com';
 const SUBJECT = 'Ново запитване от сайта на Can Cakes';
 const LABELS = { email: 'Имейл' };          // по-четими имена в писмото
 const MAX_LEN = 2000;                        // таван за дължина на всяко поле
